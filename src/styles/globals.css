@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+  
+::-webkit-font-smoothing
+
+.clip-path-custom-1 {
+  clip-path: path('M 0 0 Q 50% 20%, 100% 0 L 100% 100% Q 50% 80%, 0 100% Z');
+}
+
+.clip-path-custom-2 {
+  clip-path: path('M 0 30% Q 30% 0, 100% 0 Q 100% 30%, 100% 100% Q 0 100%, 0 30% Z');
+}
+
+.maskImage {
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+}
