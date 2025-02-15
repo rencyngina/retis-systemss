@@ -1,0 +1,81 @@
+transition-transform active:scale-90 hover:scale-110
+import React from 'react';
+import { FaCheckCircle } from 'react-icons/fa';
+import Navbar from '@/Components/Navbar';
+import Image from 'next/image';
+import { Montserrat, Roboto, Dancing_Script, Pacifico, Charm, Lora, Poppins, Playfair_Display, Raleway, Merriweather, Great_Vibes, Satisfy } from 'next/font/google';
+
+const montserrat = Montserrat({ subsets: ['latin'] });
+const roboto = Roboto({ subsets: ['latin'], weight: ['400'] });
+const dancingScript = Dancing_Script({ subsets: ['latin'], weight: ['400', '700'] });
+const charm = Charm({ subsets: ['latin'], weight: ['400', '700'] });
+const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] });
+const lora = Lora({ subsets: ['latin'], weight: ['400', '700'] });
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] });
+const playfairDisplay = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'] });
+const raleway = Raleway({ subsets: ['latin'], weight: ['400', '700'] });
+const merriweather = Merriweather({ subsets: ['latin'], weight: ['400', '700'] });
+const greatVibes = Great_Vibes({ subsets: ['latin'], weight: ['400'] });
+const satisfy = Satisfy({ subsets: ['latin'], weight: ['400'] });
+
+const About = () => {
+  return (
+    <>
+      <Navbar />
+      <div className="flex flex-col h-auto">
+        {/* Purple Background Section */}
+        <div className="bg-[#8b3f91] w-full lg:h-auto mt-20">
+          <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between lg:gap-8 xl:gap-10 p-6 xl:p-12 lg:p-8">
+            
+            {/* Left Section: Text */}
+            <div className="lg:w-1/2 text-white">
+              <h1 className="text-2xl lg:text-3xl text-yellow-600 lg:mb-10 mb-8">
+                Financial Planning Services
+              </h1>
+              <p className="text-lg lg:text-2xl">
+                Sovereign Wealth Management offers financial planning and discretionary portfolio management services.
+              </p>
+              <p className="text-sm font-thin lg:text-lg mt-6">
+                Synchronizing your wealth with your values, values-based financial planning goes further, helping you make a meaningful impact on the things that matter most.
+              </p>
+            </div>
+
+            {/* Right Section: Images */}
+            <div className="lg:w-1/2 flex justify-end">
+              <div className="relative flex flex-col gap-5">
+                <Image
+                  src="/images/happy2.jpg"
+                  alt="financial"
+                  width={250}
+                  height={150}
+                  className="border-2 border-[#03234D] rounded-[50px]"
+                  loading="lazy"
+                />
+                <Image
+                  src="/images/happy1.jpg"
+                  alt="financial"
+                  width={350}
+                  height={450}
+                  className="border-2 border-[#03234D] rounded-[80px]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* About Us Section */}
+        <div className="relative">
+          <div className="absolute top-[-3rem] left-0 right-0 mx-auto w-[90%] lg:w-3/4 bg-white shadow-sm p-6 lg:p-12">
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-4 text-center">About Us</h2>
+            <p className="text-lg text-gray-600 leading-relaxed text-center">
+              At Retis Systems Limited, we are committed to empowering businesses and individuals through cutting-edge information security, software development, and online marketing solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default About;
