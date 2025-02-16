@@ -1,8 +1,8 @@
-import React from 'react';
-import { Charm } from 'next/font/google';
+import React from "react";
+import { Charm } from "next/font/google";
 
 // Font configuration
-const charm = Charm({ subsets: ['latin'], weight: ['400', '700'] });
+const charm = Charm({ subsets: ["latin"], weight: ["400", "700"] });
 
 const Vision = () => {
   const cards = [
@@ -60,7 +60,9 @@ const Vision = () => {
       <div className="absolute inset-0 bg-[url('https://source.unsplash.com/1600x900/?nature,technology')] bg-cover bg-center opacity-30"></div>
 
       {/* Cards Section */}
-      <div className="relative z-10 flex flex-wrap justify-center gap-6 max-w-5xl w-full"> {/* Adjusted gap */}
+      <div className="relative z-10 flex flex-wrap justify-center gap-6 max-w-5xl w-full">
+        {" "}
+        {/* Adjusted gap */}
         {cards.map((card, index) => (
           <div
             key={index}
@@ -71,10 +73,16 @@ const Vision = () => {
 
             {/* Text Content */}
             <div>
-              <span className={`text-xl font-bold text-white ${charm.className}`}> {/* Reduced text size */}
+              <span
+                className={`text-xl font-bold text-white ${charm.className}`}
+              >
+                {" "}
+                {/* Reduced text size */}
                 {card.title}
               </span>
-              <p className="text-md text-white mt-2"> {/* Reduced text size */}
+              <p className="text-md text-white mt-2">
+                {" "}
+                {/* Reduced text size */}
                 {card.description}
               </p>
             </div>

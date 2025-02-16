@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="h-[84vh] min-h-[60vh] md:h-[50vh] lg:h-[90vh] w-full relative flex flex-col justify-center items-center lg:mt-0 sm:mt-20 overflow-hidden px-4">
+    <div className="h-[80vh] min-h-[60vh] md:h-[50vh] lg:h-[80vh] w-full relative flex flex-col justify-center items-center lg:mt-0 sm:mt-20 overflow-hidden px-4">
       {/* Background Video */}
       <video
         autoPlay

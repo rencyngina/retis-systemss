@@ -38,7 +38,7 @@ const MotionSection = () => {
   };
 
   return (
-    <div className="lg:h-[8vh] h-[8vh] bg-white overflow-hidden flex items-center brightness-30">
+    <div className="lg:h-[7.4vh] h-[8vh] bg-white overflow-hidden flex items-center brightness-30">
       <motion.div
         className="flex items-center space-x-16"
         animate={motionSettings}
@@ -48,9 +48,9 @@ const MotionSection = () => {
             <img
               src={item.image}
               alt={item.text}
-              className="w-12 h-12 sm:w-16 sm:h-16" // Smaller on small screens
+              className="w-8 h-8 sm:w-10 sm:h-10" // Adjusted to be smaller
             />
-            <span className="text-white text-base sm:text-xl font-semibold whitespace-nowrap">
+            <span className="text-black text-base sm:text-xl font-semibold whitespace-nowrap">
               {item.text}
             </span>
           </div>

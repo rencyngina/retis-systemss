@@ -1,24 +1,43 @@
 import React from "react";
-import { Lora, Poppins, Pacifico, Charm, Playfair_Display, Dancing_Script, Raleway, Merriweather, Great_Vibes, Satisfy, Montserrat } from 'next/font/google';
+import {
+  Lora,
+  Poppins,
+  Pacifico,
+  Charm,
+  Playfair_Display,
+  Dancing_Script,
+  Raleway,
+  Merriweather,
+  Great_Vibes,
+  Satisfy,
+  Montserrat,
+} from "next/font/google";
 
-
-const lora = Lora({ subsets: ['latin'], weight: ['400', '700'] });
-const pacifico = Pacifico({ subsets: ['latin'], weight: '400' }); // Remove weight specification
-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] });
-const charm = Charm({ subsets: ['latin'], weight: ['400', '700'] });
-const playfairDisplay = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'] });
-const dancingScript = Dancing_Script({ subsets: ['latin'], weight: ['400', '700'] });
-const raleway = Raleway({ subsets: ['latin'], weight: ['400', '700'] });
-const merriweather = Merriweather({ subsets: ['latin'], weight: ['400', '700'] });
-const greatVibes = Great_Vibes({ subsets: ['latin'], weight: '400', }); 
-const satisfy = Satisfy({ subsets: ['latin'], weight: '400' });
-const montserrat = Montserrat({ subsets: ['latin'] });
+const lora = Lora({ subsets: ["latin"], weight: ["400", "700"] });
+const pacifico = Pacifico({ subsets: ["latin"], weight: "400" }); // Remove weight specification
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
+const charm = Charm({ subsets: ["latin"], weight: ["400", "700"] });
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+const raleway = Raleway({ subsets: ["latin"], weight: ["400", "700"] });
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+const greatVibes = Great_Vibes({ subsets: ["latin"], weight: "400" });
+const satisfy = Satisfy({ subsets: ["latin"], weight: "400" });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 const Pricings = () => {
   const plans = [
     {
       title: "Starter",
-      price: "$50/month",
       features: [
         "Basic digital solution",
         "Introductory training modules",
@@ -28,7 +47,6 @@ const Pricings = () => {
     },
     {
       title: "Professional",
-      price: "$200/month",
       features: [
         "Advanced marketing strategies",
         "Enhanced security features",
@@ -38,7 +56,6 @@ const Pricings = () => {
     },
     {
       title: "Enterprise",
-      price: "$600/month",
       features: [
         "Customized digital strategies",
         "Full-scale development services",
@@ -48,7 +65,6 @@ const Pricings = () => {
     },
     {
       title: "Starter",
-      price: "$50/month",
       features: [
         "Basic digital solution",
         "Introductory training modules",
@@ -80,7 +96,9 @@ const Pricings = () => {
 
         {/* Content */}
         <div className="flex flex-col items-center justify-center lg:min-h-[90vh] min-h-[50vh] lg:p-4 p-8">
-          <h1 className={`lg:text-7xl text-2xl font-montserrat text-center text-white lg:mb-24 mb-20 mt-8 ${merriweather.className}`}>
+          <h1
+            className={`lg:text-7xl text-2xl font-montserrat text-center text-white lg:mb-24 mb-20 mt-8 ${merriweather.className}`}
+          >
             Our services
           </h1>
 
