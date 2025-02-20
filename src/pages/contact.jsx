@@ -3,11 +3,12 @@ import Navbar from "@/Components/Navbar";
 import styles from "@/styles/contact.module.css";
 import Button from "@/Components/Button";
 import Head from "@/Components/Head";
+import Foot from "@/Components/Foot";
 
 const Contact = () => {
   return (
     <>
-      <Head />
+      
       <Navbar />
       <div className="min-h-screen flex flex-col mt-">
         {/* Top Section */}
@@ -147,6 +148,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Foot />
     </>
   );
 };

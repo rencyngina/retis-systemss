@@ -2,6 +2,8 @@ import { FaCheckCircle } from "react-icons/fa";
 import Navbar from "@/Components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+
+
 import {
   Lora,
   Poppins,
@@ -16,6 +18,7 @@ import {
   Montserrat,
 } from "next/font/google";
 import Head from "@/Components/Head";
+import Foot from "@/Components/Foot";
 
 const lora = Lora({ subsets: ["latin"], weight: ["400", "700"] });
 const pacifico = Pacifico({ subsets: ["latin"], weight: "400" }); // Remove weight specification
@@ -41,7 +44,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 const About = () => {
   return (
     <>
-      <Head />
+      
       <Navbar />
       <div className="flex flex-col h-auto ">
         {/* Purple Background Section */}
@@ -217,6 +220,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <Foot />
     </>
   );
 };

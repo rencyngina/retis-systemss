@@ -51,7 +51,7 @@ const Head = () => {
             className="flex items-center space-x-2 mt-2 mb-3 sm:mb-0"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/morris-mureti-506404110/"
+            href="https://www.linkedin.com/company/retistech/"
           >
             <FaLinkedin className="ml-3" />
             <p className="hidden sm:block">LinkedIn</p>

@@ -6,7 +6,7 @@ const About = () => {
     <div className="flex flex-col md:flex-row items-center justify-between min-h-[90vh] px-4 md:px-10 lg:px-28 relative">
       {/* Left Section: Frosted Glass Effect */}
       <div className="md:w-1/2 relative text-center md:text-left space-y-8 justify-center p-6 bg-white/20 backdrop-blur-xl shadow-sm">
-        <h1 className="text-3xl lg:text-7xl md:text-5xl font-cursive text-gray-800">
+        <h1 className="text-3xl lg:text-7xl md:text-5xl font-montserrat text-gray-800">
           About Us
         </h1>
         <h4 className="text-2xl font-montserrat text-yellow-500">
@@ -18,7 +18,7 @@ const About = () => {
           remediation actions while creating a single source of truth for all
           endpoint tools and teams.
         </p>
-        <button className="bg-[#07294C] text-white font-bold px-8 py-3 hover:bg-blue-600 transition">
+        <button className="bg-[#07294C] text-white font-bold px-8 py-3 hover:bg-[#8B3F91] transition">
           Read More
         </button>
       </div>

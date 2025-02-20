@@ -4,7 +4,7 @@ import { Instagram, Twitter } from "lucide-react";
 // Custom Card components
 const Card = ({ children, className }) => (
   <div
-    className={`bg-[#07294C] shadow-md rounded overflow-hidden transition-all duration-300 transform hover:scale-105 ${className}`}
+    className={`bg-[#8B3F91] shadow-md rounded overflow-hidden transition-all duration-300 transform hover:scale-105 ${className}`}
   >
     {children}
   </div>
@@ -62,10 +62,10 @@ const OurTeam = () => {
 
   return (
     <div className="container mx-auto px-6 py-12">
-      <h1 className="lg:text-6xl text-2xl font-bold text-center lg:mb-8 mb-9 text-[#07294C]">
+      <h1 className="lg:text-6xl text-2xl font-bold text-center lg:mb-8 mb-9 text-[#8B3F91]">
         Meet Our Team
       </h1>
-      <p className="mb-10 lg:text-xl text-base font-mono text-center  text-[#06111c]">
+      <p className="mb-10 lg:text-xl text-base  text-center  text-[#06111c]">
         At Retis Systems, our mantra "Shining Together" embodies our belief in
         the power
         <br /> of collaboration, innovation, and shared success.
@@ -111,7 +111,7 @@ const OurTeam = () => {
       <div className="text-center">
         <button
           onClick={() => (window.location.href = "/memberss")}
-          className="px-6 py-3 mt-10 border border-[#073F77] bg-white text-[#073F77] text-lg font-semibold  hover:bg-[#073F77] hover:text-white transition duration-300"
+          className="px-6 py-3 mt-10 border border-[#8B3F91] bg-white text-[#8B3F91] text-lg font-semibold  hover:bg-[#8B3F91] hover:text-white transition duration-300"
         >
           See All Team Members
         </button>

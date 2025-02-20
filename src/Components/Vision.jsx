@@ -60,7 +60,7 @@ const Vision = () => {
       <div className="absolute inset-0 bg-[url('https://source.unsplash.com/1600x900/?nature,technology')] bg-cover bg-center opacity-30"></div>
 
       {/* Cards Section */}
-      <div className="relative z-10 flex flex-wrap justify-center gap-6 max-w-5xl w-full">
+      <div className="relative z- flex flex-wrap justify-center gap-6 max-w-5xl w-full">
         {" "}
         {/* Adjusted gap */}
         {cards.map((card, index) => (

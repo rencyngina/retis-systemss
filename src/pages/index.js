@@ -35,14 +35,14 @@ const Home = () => {
     <main className={roboto.className}>
       <Head />
       <Navbar />
-      <Hero className={montserrat.className} />
+      <Hero  />
       <Movingsec />
-      <Vision className={`${charm.className} ${dancingScript.className}`} />
+      <Vision  />
       <About />
-      <Standout className={montserrat.className} />
+      <Standout />
       <Pricings />
-      <Ourteam className={`${montserrat.className} ${pacifico.className} ${raleway.className}`} />
-      <Testimonials className={playfairDisplay.className} />
+      <Ourteam />
+      <Testimonials />
       <Footer />
     </main>
   );

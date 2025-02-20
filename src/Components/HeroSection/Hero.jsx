@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="h-[80vh] min-h-[60vh] md:h-[50vh] lg:h-[80vh] w-full relative flex flex-col justify-center items-center lg:mt-0 sm:mt-20 overflow-hidden px-4">
+    <div className="h-[80vh] min-h-[60vh] md:h-[50vh] lg:h-[90vh] w-full relative flex flex-col justify-center items-center lg:mt-0 sm:mt-20  overflow-hidden px-4">
       {/* Background Video */}
       <video
         autoPlay
@@ -18,13 +18,13 @@ const Hero = () => {
 
       {/* Centered Content */}
       <div className="text-center text-white max-w-5xl px-6 relative z-10">
-        <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-4 mt-8 lg:mt-0 text-[#8B3F91]">
+        <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb- mt-11 lg:mt-0 text-[#8B3F91] ">
           Empower Your Digital Journey
         </h1>
-        <p className="text-base sm:text-sm md:text-base lg:text-lg font-mono lg:mb-5 mb-3 leading-relaxed">
+        <p className="text-base sm:text-sm md:text-base lg:text-lg font-mono lg:mb-4 mb-3 leading-relaxed mt-4">
           Innovative solutions for your business growth and security.
         </p>
-        <button className="bg-transparent border border-[#8B3F91] hover:bg-black/50 hover:border-white rounded-3xl text-white font-bold py-2 px-4 sm:py-3 sm:px-8 md:px-12 lg:px-16 mt-4 lg:mb-8">
+        <button className="bg-transparent border border-[#8B3F91] hover:bg-[#8B3F91] hover:border-[#8B3F91]  text-white font-bold py-2 px-4 sm:py-3 sm:px-8 md:px-12 lg:px-16 mt-2 lg:mb-2">
           GET STARTED
         </button>
       </div>
@@ -48,7 +48,7 @@ const Hero = () => {
               "Custom software tailored to meet your business needs.",
           },
           {
-            title: "Cloud Computing",
+            title: "Training",
             description: "Scalable cloud solutions for your business growth.",
           },
         ].map((item, index) => (
@@ -63,7 +63,7 @@ const Hero = () => {
       </div>
 
       {/* For Small Screens: Two Rows of Two Cards */}
-      <div className="block md:hidden mt-8 mb-10">
+      <div className="block md:hidden lg:mt-2 mb-10">
         <div className="grid grid-cols-2 gap-4">
           {[
             {

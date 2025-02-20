@@ -41,7 +41,7 @@ const Standout = () => {
     <div className="flex flex-col items-center justify-center min-h-[80vh] space-y-10 px-4 md:px-10 lg:px-20 bg-gradient-to-b from-[#07294C] to-[#084D92]">
       {/* Main Title with Pacifico */}
       <h1
-        className={`text-3xl lg:text-6xl sm:text-4xl lg:mb-14 text-white text-center mb-8 mt-10 ${poppins.className}`}
+        className="text-3xl lg:text-6xl sm:text-4xl lg:mb-14 text-white text-center font-montserrat mb-8 mt-10"
       >
         Why we stand out
       </h1>
